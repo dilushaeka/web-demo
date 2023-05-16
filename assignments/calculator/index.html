@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- link css file -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    
+
+</head>
+<body>
+    <div class="calculator">
+        
+        <input type="text" id="display">
+
+        <div class="keys"></div>
+            <div class="row">
+                <button class="func7" onclick="func7()">7</button>
+                <button class="func7" onclick="func8()">8</button>
+                <button class="func7" onclick="func9()">9</button>
+                <button class="func_sum" onclick="func_sum()">+</button>
+            </div>
+
+            <div class="row">
+                <button class="func4" onclick="func4()">4</button>
+                <button class="func5" onclick="func5()">5</button>
+                <button class="func6" onclick="func6()">6</button>
+                <button class="func_sub" onclick="func_sub()">-</button>
+            </div>
+
+            <div class="row">
+                <button class="func1" onclick="func1()">1</button>
+                <button class="func2" onclick="func2()">2</button>
+                <button class="func3" onclick="func3()">3</button>
+                <button class="func_mul" onclick="func_mul()">*</button>
+            </div>
+
+            <div class="row">
+                <button class="ac" onclick="ac()">C</button>
+                <button class="func0" onclick="func0()">0</button>
+                <button class="func_dev" onclick="func_dev()">/</button>
+                <button class="equals" onclick="equals()">=</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- link js -->
+    <script src="/js/main.js"></script>
+</body>
+</html>

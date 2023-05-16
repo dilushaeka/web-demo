@@ -1,0 +1,18 @@
+#preloder {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(2, 19, 34);
+  z-index: 9999;
+}
+
+#preloder img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20vw;
+  height: 20vh;
+}

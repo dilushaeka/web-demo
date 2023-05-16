@@ -13,16 +13,18 @@ header{
   z-index: 2000;
 }
 body {
-  background-color: #040404;
+  /* background-color: #040404; */
   color: #fff;
   position: relative;
   background: transparent;
+  width: 100vw;
+  height: 100%;
 }
 
 body::before {
   content: "";
   position: fixed;
-  background: url("../assets/images/black\ background.png") top right no-repeat;
+  /* background: url("../assets/images/black\ background.png") top right no-repeat; */
   background-size: cover;
   left: 0;
   right: 0;
@@ -366,9 +368,19 @@ a:hover {
 }
 
 .infomation-box{
-  
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
+.contact .infomation-box p {
+  padding: 0;
+  color: #fff;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0 0 0 68px;
+  z-index: 500;
+}
 /* ================================================================================================= */
 /* single page option */
 

@@ -624,10 +624,12 @@ header.sticky nav ul li a {
   align-items: stretch;
   width:20vw;
   height: max-content;
-  background-color: #c0bcbc;
+  background-color: #b61c1c;
+  padding: 20px;
 }
 .infomation-box a {
   text-decoration: none;
+  color: black;
 }
 
 .text-form{
@@ -652,9 +654,25 @@ header.sticky nav ul li a {
   display: contents;
 }
 
+/*--------------------------------------------------------
+               footer
+ -------------------------------------------------------------------- */
+footer{
+  background-color: #18d26e;
+  height: 10vh;
+}
+
+
+
+
+
+
+
 
 
 /*  this is  media quary*/
+
+
 
 
 @media (max-width: 1078px) {

@@ -6,11 +6,24 @@
 * {
   margin: 0;
   padding: 0;
-  /* font-family: "Poppins", sans-serif;
-  font-family: "Ubuntu", sans-serif; */
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
-header{
+
+.header {
+  
+  display: flex;
+  justify-content:space-between;
+  position: fixed;
+  align-items:center;
+  /* padding: 340px 100px; */
+  width: 100%;
+  top: 0px;
+  padding: 300px 0 0 600px;
+  transition: 0.6s;
   z-index: 2000;
+  
 }
 body {
   /* background-color: #040404; */
@@ -18,13 +31,13 @@ body {
   position: relative;
   background: transparent;
   width: 100vw;
-  height: 100%;
+  overflow-x: hidden;
 }
 
 body::before {
   content: "";
   position: fixed;
-  /* background: url("../assets/images/black\ background.png") top right no-repeat; */
+  background: url("../assets/images/black\ background.png") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -34,15 +47,17 @@ body::before {
 }
 
 section .container {
-  background: rgba(157, 151, 226, 0.444);
-  margin-left: 20rem;
+  padding: 0 1em;
+  max-width: 115rem;
+  /* background: rgba(157, 151, 226, 0.444); */
+  margin-left: 14rem;
+  margin-right: 4rem;
   z-index: 200;
+  
 }
 
 section {
   background-color: transparent;
-  position: relative;
-  justify-self: center;
   top: 220px;
   width: 80vw;
 }
@@ -60,21 +75,6 @@ section {
   background: #c916e4;
   margin: 4px 10px;
 }
-
-/* @media all (max-width) {
-  body::before {
-    background-attachment: fixed;
-  }
-} */
-
-@media (max-width: 750px) {
-  #topbar>ul {
-    display: block;
-    position: absolute;
-  }
-
-  
-}
 a {
   color: rgb(84, 83, 83);
   text-decoration: none;
@@ -85,81 +85,186 @@ a:hover {
   text-decoration: none;
 }
 
+
 /* ----------------------------------------------------------------------------
                                    Header
 ---------------------------------------------------------------------------- */
 
-#navbar {
-  top: 100px;
-  left: 800px;
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+  width: max-content;
+  display: flex;
+  top: 0px;
+  left: 0px;
+  height: 5vh;
   position: fixed;
   z-index: 2000;
+
 }
-.navbar li {
+
+.navbar ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
   list-style: none;
-  display: inline-block;
-  padding: 20px;
+  align-items: center;
+  justify-content:center ;
 }
 
-.navbar > ul > li > a {
-  color: #fff;
+.navbar li {
+  position: relative;
+  list-style: none;
+}
+
+.navbar li+li {
+  margin-left: 30px;
+}
+
+.navbar a,
+.navbar a:focus {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0px 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  transition: 0.3s;
   text-decoration: none;
-  font-weight: bolder;
-  font-size: x-large;
 }
 
-.navbar:hover{
-  color: #ca1f1f;
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
 }
 
-#topbar {
-  /* padding: 0 1em;
-  max-width: 60rem;
-  margin: auto; */
+.navbar a:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 7px;
+  bottom: -5px;
+  left: 55px;
+  background-color: #f828f1;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 45px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #fff;
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  /* transition: 0.5s; */
   position: fixed;
-  z-index: 2000;
-  background-color: blueviolet;
+  right: 15px;
+  top: 15px;
 }
 
-@media (max-width: 1590px) {
-  #header h1 {
-    font-size: 36px;
-  }
 
-  #header h2 {
-    font-size: 20px;
-    line-height: 30px;
-  }
 
-  .social-links {
-    margin-top: 15px;
-  }
 
-  #header .container-flud {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #navbar{
-    display: none;
-  }
-
-  #burger_button{
-
-  }
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+  margin-top: 0;
 }
 
-/* ----------------------------------------------------------------------------
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 45px;
+  left: 15px;
+  padding: 10px 0;
+  overflow-y: auto;
+  transition: 0.3s;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-mobile li {
+  padding: 12px 20px;
+}
+
+.navbar-mobile li+li {
+  margin: 0;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  font-size: 16px;
+  position: relative;
+}
+
+header.sticky{
+  padding: 0px 100px 0 540px;
+  background-color: rgb(2, 1, 12);
+  height: 8vh;
+  
+}
+
+header.sticky nav ul li a {
+  color: rgb(140, 14, 236);
+}
+
+/*----------------------------------------------------------------------------
                               Home section 
 
 ---------------------------------------------------------------------------- */
 #home-section {
   width: 100vw;
-  height: 80vh;
-  /* position: fixed; */
+  height:auto;
 }
 
+#homeContainer{
+  background-color: transparent;
+}
 .social-links {
   display: flex;
   position: relative;
@@ -207,30 +312,25 @@ a:hover {
 
 #headerPic {
   position: relative;
-  top: -282px;
-  left: 600px;
+  top: -262px;
+  left: 500px;
   opacity: 0.63;
   width: 500px;
   z-index: -1;
 }
 
-#header {
-  position: fixed;
-  top: 450px;
-  left: 200px;
-}
+
 
 
 
 /* ----------------------------------------------------------------------------
                                  
----------------------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------------------
                 about section                  
 ---------------------------------------------------------------------------- */
 #about-section{
-  
+  margin-left: 0;
 }
 #title-about {
   top: 200px;
@@ -245,45 +345,67 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   position: relative;
+  width: fit-content;
   left: -240px;
   opacity: .9;
+  padding-right: 0px;
 }
 
 .myAbout{
-  background-color: rgb(20, 13, 91);
-  display: flex;
+  /* background-color: rgb(136, 131, 193);
+   */
+   display: flex;
+  justify-content: flex-end;
   flex-direction: row;
   position: absolute;
-  top: 0px;
-  left: 270px;
-  width: 1000px;
+  top: 1100px;
+  left: 440px;
+  width: 1100px;
+  margin: 40px;
   height: auto;
   z-index: 230;
   font-size: xx-large;
   color: antiquewhite;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.myAbout>p{
+
+.my-details-box{
+  padding: 40px 40px 40px 40px;
+  height: 600px;
+  border-radius: 2rem;
+  border: 4px solid white;
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-evenly;
+  margin: 0 20px 0 70px;
+  background-color: #302760;
 
 }
 .my-details{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  border-radius: 2rem;
+  /* background-color: #302760; */
+  position: relative;
+  top: -200px;
+  left: 200px;
   
 }
 
-.my-details li{
+
+.my-details-box li{
   /* list-style:; */
   list-style-type: circle;
 
 }
 
-.my-details li i{
+.my-details-box li i{
   font-size: 16px;
   margin-right: 5px;
-  color: #eff1f0;
-  line-height: 0;
+  color: #0ec56a;
+  line-height: 6;
+  font-size:large;
 }
 
 .about .tech-img{
@@ -298,6 +420,9 @@ a:hover {
   height: fit-content;
   width: fit-content;
 }
+
+
+/*=========== tech div =============*/
 .tech-main-div>div>h1{
   color: rgb(173, 9, 171);
   font-weight: bolder;
@@ -322,6 +447,11 @@ a:hover {
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
+.interests{
+  margin-left: 0em;
+  /* background-color: #c916e4; */
+  
+}
 .interests .icon-box {
   display: flex;
   align-items: center;
@@ -357,50 +487,219 @@ a:hover {
 
 
 
+/* ----------------------------------------------------------------------------
+                              My work section 
+
+---------------------------------------------------------------------------- */
+.asignment{
+  display: flex;
+  flex-direction: column;
+  column-count: auto;
+  align-items: stretch;
+  column-gap: normal;
+
+}
+
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+
+.assin-big{
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  gap: 30px;
+
+}
+
+.asignment img{
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+}
+
+.mywork-section .icon-box {
+  text-align: center;
+  background: rgba(204, 204, 204, 0.1);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+.mywork-section .icon-box .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background: #18d26e;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+
+.mywork-section .icon-box .icon i {
+  color: #fff;
+  font-size: 28px;
+}
+
+.mywork-section .icon-box .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.mywork-section .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.mywork-section .icon-box h4 a {
+  color: #fff;
+}
+
+.mywork-section .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.mywork-section .icon-box:hover {
+  background: #18d26e;
+  border-color: #18d26e;
+}
+
+.mywork-section .icon-box:hover .icon {
+  background: #fff;
+}
+
+.mywork-section .icon-box:hover .icon i {
+  color: #18d26e;
+}
+
+.mywork-section .icon-box:hover .icon::before {
+  background: #35e888;
+}
+
+.mywork-section .icon-box:hover h4 a,
+.mywork-section .icon-box:hover p {
+  color: #fff;
+}
+
+.icon-box>a,
+.icon-box>p{
+  color: #fff;
+}
 
 /* ----------------------------------------------------------------------------
                               contact me section 
 
 ---------------------------------------------------------------------------- */
+.contact-and-form-div{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  
+}
+
 .contact-me-div{
   display: flex;
   flex-direction: column;
+  width:web-kit-fill-availble;
 }
 
 .infomation-box{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: stretch;
+  width:20vw;
+  height: max-content;
+  background-color: #c0bcbc;
+}
+.infomation-box a {
+  text-decoration: none;
 }
 
-.contact .infomation-box p {
-  padding: 0;
-  color: #fff;
-  line-height: 24px;
-  font-size: 14px;
-  margin: 0 0 0 68px;
-  z-index: 500;
-}
-/* ================================================================================================= */
-/* single page option */
-
-
-#about-section {
-  display: none;
+.text-form{
+  display: flex;
+  flex-direction: column;
+  width:20vw;
 }
 
-#resume-section {
-  display: none;
+.text-form .firstname{
+  line-height: 2;
 }
 
-#gallery-section {
-  display: none;
+.text-form>div>input{
+  width: -webkit-fill-available;
 }
 
-#mywork-section {
-  display: none;
+.text-form>div>textarea{
+  width: -webkit-fill-available;
 }
 
-#contatct-section {
-  display: none;
+.infomation-title{
+  display: contents;
+}
+
+
+
+/*  this is  media quary*/
+
+
+@media (max-width: 1078px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .interests>div {
+    display:flex;
+    flex-direction: row;
+    grid-row: 2;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .row>div {
+    display: grid;
+    flex-direction: row;
+    justify-content:flex-start;
+  
+  }
+  .my-details{
+    display: block;
+    flex-direction:column;
+    background-color: #0ec56a;
+    border-radius: 4rem solid black;
+    
+  }
+}
+
+
+
+
+@media(max-width:307px) {
+  .row>div {
+    display: grid;
+    flex-direction: row;
+    justify-content:flex-start;
+    background-color:#f828f1 ;
+  } 
+
+  .myAbout{
+    width: 200px;
+  }
 }

@@ -46,10 +46,14 @@ body::before {
   z-index: -1;
 }
 
+main{
+}
+
 section .container {
+  position: relative;
+  top:200px;
   padding: 0 1em;
   max-width: 115rem;
-  /* background: rgba(157, 151, 226, 0.444); */
   margin-left: 14rem;
   margin-right: 4rem;
   z-index: 200;
@@ -260,6 +264,7 @@ header.sticky nav ul li a {
 #home-section {
   width: 100vw;
   height:auto;
+
 }
 
 #homeContainer{
@@ -310,6 +315,19 @@ header.sticky nav ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.hireMe{
+  position: relative;
+  top: -180px;
+  color: #277ef7ee;
+  left: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #302760;
+  width: 300px;
+  padding: 40px;
+  margin-left: 20px;
+  border-radius: 2rem;
+}
+
 #headerPic {
   position: relative;
   top: -262px;
@@ -330,7 +348,8 @@ header.sticky nav ul li a {
                 about section                  
 ---------------------------------------------------------------------------- */
 #about-section{
-  margin-left: 0;
+  margin-top: 200px;
+  padding-top: 100px;
 }
 #title-about {
   top: 200px;
@@ -352,13 +371,12 @@ header.sticky nav ul li a {
 }
 
 .myAbout{
-  /* background-color: rgb(136, 131, 193);
-   */
-   display: flex;
+  background-color: rgb(131, 193, 160);
+  display: flex;
   justify-content: flex-end;
   flex-direction: row;
   position: absolute;
-  top: 1100px;
+  top: 1800px;
   left: 440px;
   width: 1100px;
   margin: 40px;
@@ -484,8 +502,12 @@ header.sticky nav ul li a {
                               Resume section 
 
 ---------------------------------------------------------------------------- */
-
-
+.resume-box{
+  
+}
+.resume-box{
+  background-color: #0ec56a;
+}
 
 /* ----------------------------------------------------------------------------
                               My work section 
@@ -657,6 +679,8 @@ header.sticky nav ul li a {
 /*--------------------------------------------------------
                footer
  -------------------------------------------------------------------- */
+
+
 footer{
   background-color: #18d26e;
   height: 10vh;
@@ -704,6 +728,20 @@ footer{
     border-radius: 4rem solid black;
     
   }
+  .section-title{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: -200px;
+  }
+  .container{
+    margin-left: 0px;
+    padding-left: 0;
+  }
+
+  .myAbout{
+    width: auto;
+  }
 }
 
 
@@ -718,6 +756,19 @@ footer{
   } 
 
   .myAbout{
-    width: 200px;
+    width: 900px;
+  }
+
+  .my-details{
+    padding: 0;
+    margin-left: 0;
+    position: relative;
+    left: 100px;
+    top: 100px;
+  
+  }
+
+  .my-details-box{
+    margin-left: 0;
   }
 }

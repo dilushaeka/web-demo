@@ -27,6 +27,7 @@
 
 <!----- my css ------>
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/preloder.css">
 
  <!-- Favicons -->
  <link href="assets/img/favicon.png" rel="icon">
@@ -51,8 +52,11 @@
   />
 
 
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
+  
   <!-- link pre loder css -->
   <!-- <link rel="stylesheet" href="/css/preloder.css"> -->
  
@@ -63,7 +67,7 @@
     
 
     <div id="preloder">
-        <img src="/assets//images/gif/Infinity-5s-217px.gif" alt="">
+        <img src="/assets/images/gif/loading.gif" alt="preloder">
     </div>
 
     <!-- ============== ==============================Header=====================================================   -->
@@ -71,12 +75,12 @@
       <!-- <a href="" class="logo">Dilusha</a>  -->
       <nav id="navbar" class="navbar">
           <ul class="nav-list">
-            <li class="nav-item"><a href="#home-section" id="linkHome">Home</a></li>
-            <li class="nav-item"><a href="#about-section" id="linkAbout">About</a></li>
-            <li class="nav-item"><a href="#resume-section" id="linkResume">Resume </a></li>
-            <li class="nav-item"><a href="#gallery-section" id="linkGallery">Gallery</a></li>
-            <li class="nav-item"><a href="#mywork-section" id="linkMywork">My work</a></li>
-            <li class="nav-item"><a href="#contatct-section" id="linkContact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#home-section">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about-section" >About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resume-section" >Resume </a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery-section">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mywork-section" >My work</a></li>
+            <li class="nav-item"><a href="#contatct-section" >Contact</a></li>
           </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>   
@@ -103,12 +107,14 @@
               <img src="assets\images\my officia photo png.png" alt="" id="headerPic">
             </div>
             <br>
-            <br>
-            <br>
+            <!-- <br>
+            <br> -->
             <div class="intro">
-              <h2>“Software Engineering Student , Social Worker & volunteer ”</h2>
+              <h2>“Software Engineering Student ,
+                 Social Worker & volunteer ”</h2>
+              <p>I'm <span class="typed" data-typed-items="Software Engineering Student, Social Worker, Developer, Freelancer, Photographer"></span></p>
             </div>
-            <div class="hireMe">
+            <div class="hireMe animate__heartBeat">
               <h1>HIRE Me</h1>
             </div>
           </div>
@@ -131,7 +137,7 @@
                         <img src="assets\images\my white shirt pic.png " alt="about-photo">
                     </div>
     
-                    <div class="myAbout">
+                    <div class="myAbout" id="myAbout">
                         <p>I’m  Software Engineering Student , Social Worker & Volunteer From Sri Lanka. 
                                 I Have  Done So Many Social projects and Volunteering Events.Highly Ambitious
                                  & Focused Undergraduate in Computer Science.
@@ -175,6 +181,11 @@
                         <div class="tech-img"><img  src="assets\png\java.png" alt="java-png"><span>JAVA</span></div>
                         <div class="tech-img"><img  src="assets\png\hibernate-icon-0.jpg" alt="hiber-png"><span>HIBERNATE</span></div>
                         <div class="tech-img"><img  src="assets\png\html-5.png" alt="html-png">HTML</div>   
+
+                        <div class="tech-img"><img  src="assets\png\css-3.png" alt="css-png"><span>CSS</span></div>
+                        <div class="tech-img"><img  src="assets\png\java.png" alt="java-png"><span>JAVA</span></div>
+                        <div class="tech-img"><img  src="assets\png\hibernate-icon-0.jpg" alt="hiber-png"><span>HIBERNATE</span></div>
+                        <div class="tech-img"><img  src="assets\png\html-5.png" alt="html-png">HTML</div> 
                     </div>
                 </div><br> <br> <br>
     
@@ -621,14 +632,7 @@
 
     setTimeout(() => {
         $("#preloder").css("display","none");
-      }, 5000);
-
-    // $(document).ready(()=>{
-    //     // setTimeout(()=>{
-
-    //     // })
-    //     $("#preloder").css("display","none");
-    // })
+      }, 10000);
   </script>
 </body>
 </html>

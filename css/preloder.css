@@ -1,8 +1,8 @@
-#preloder {
+ #preloder {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(2, 19, 34);
+  background-color: rgb(14, 36, 55);
   z-index: 9999;
 }
 
@@ -13,6 +13,6 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  width: 20vw;
-  height: 20vh;
+  width: 50vw;
+  height: 50vh;
 }

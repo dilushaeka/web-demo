@@ -4,6 +4,7 @@
   height: 100vh;
   background-color: rgb(14, 36, 55);
   z-index: 9999;
+  display: none;
 }
 
 #preloder img {
@@ -15,4 +16,5 @@
   margin: auto;
   width: 50vw;
   height: 50vh;
+  
 }

@@ -108,7 +108,7 @@ a:hover {
   display: flex;
   top: 0px;
   left: 0px;
-  height: 5vh;
+  height: 50px;
   position: fixed;
   z-index: 2000;
 
@@ -194,9 +194,9 @@ a:hover {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-animation: all 0.3s ease-in-out;
+  -webkit-transition:  all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  color: white;
+  background-color: white;
 }
 
 /**
@@ -266,7 +266,7 @@ a:hover {
 header.sticky{
   padding: 0px 100px 0 540px;
   background-color: rgb(2, 1, 12);
-  height: 8vh;
+  height: 50px;
   
 }
 
@@ -640,6 +640,12 @@ header.sticky nav ul li a {
   
 
 }
+.view-btn{
+  background-color: #c916e4;
+  border-radius: 50%;
+  padding: 10px;
+  width: 100px;
+}
 
 
 /*--------------------------------------------------------------
@@ -768,6 +774,7 @@ header.sticky nav ul li a {
   height: max-content;
   background: rgba(255, 255, 255, 0.08);
   padding: 20px;
+  color: white;
 }
 .infomation-box a {
   text-decoration: none;
@@ -814,7 +821,7 @@ footer{
 
 
 
-@media (max-width: 1078px) {
+ @media (max-width: 1078px) {
   .interests>div {
     display:flex;
     flex-direction: row;
@@ -830,8 +837,8 @@ footer{
   
   }
   .my-details{
-    display: block;
-    flex-direction:column;
+    display: flex;
+    flex-direction:row;
     background-color: #0ec56a;
     border-radius: 4rem solid black;
     
@@ -868,7 +875,7 @@ footer{
   }
   #header {
     border-right: 1px solid #e6e9ec;
-    /* left: -300px; */
+    
   }
 
   .navbar ul li{
@@ -888,10 +895,141 @@ footer{
 
 
 
-@media (max-width: 768px) {
-  .container{
-    background-color: #0ec56a;
+
+
+/* @media(min-width: 769px){
+  .interests>div {
+    display:flex;
+    flex-direction: row;
+    grid-row: 2;
+    padding-left: 0;
+    margin-left: 0;
   }
+
+  .row>div {
+    display: grid;
+    flex-direction: row;
+    justify-content:flex-start;
+  
+  }
+  .my-details{
+    display: flex;
+    background-color: #0ec56a;
+    border-radius: 4rem solid black;
+    height: auto;
+    
+  }
+  .section-title{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: -200px;
+  }
+  .container{
+    margin-left: 0px;
+    padding-left: 0;
+  }
+
+  .myAbout{
+    margin: 8px;
+    left: 350px;
+  }
+
+  #home-section {
+    text-align: center;
+  }
+
+  #home-section h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  #home-section p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #header {
+    border-right: 1px solid #e6e9ec;
+  }
+
+  .navbar ul li{
+    color: rgb(218, 39, 39);
+  }
+
+  .nav-link{
+    margin-left: 5px;
+  }
+
+  .resume-big{
+    row-gap: 20px;
+    margin-left: 60px;
+  }
+} */
+
+
+
+@media (max-width: 768px) {
+  
+  .hamburger{
+    display: block;
+  }
+
+ 
+
+  .hamburger.active.bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active.bar:nth-child(1){
+    transform:translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+  }
+  .nav-list{
+    display: none;
+    position: fixed;
+    left: -1000%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #363626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+
+  }
+
+  .nav-item{
+    margin: 16px 0;
+  }
+
+  .nav-list.active{
+    left: 0;
+  }
+
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul li {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+
+  
+
+}
+
+/* @media (min-width: 391px) {
+  
   .hamburger{
     display: block;
   }
@@ -905,7 +1043,8 @@ footer{
   .hamburger.active .bar:nth-child(3){
     transform:translateY(-8px) rotate(-45deg);
   }
-  .nav-list{
+   .nav-list{
+    display: none;
     position: fixed;
     left: -100%;
     top: 70px;
@@ -916,7 +1055,7 @@ footer{
     text-align: center;
     transition: 0.3s;
 
-  }
+  } 
 
   [data-aos-delay] {
     transition-delay: 0 !important;
@@ -936,11 +1075,9 @@ footer{
     padding-inline-start: 40px;
   }
 
-  #navbar{
-    
-  }
+  
 
-}
+} */
 
 @media (max-width:390px){
   .name{
@@ -970,6 +1107,33 @@ footer{
   
 }
 
+/* @media (min-width:308px){
+  .name{
+    position: relative;
+    top: 420px;
+    left: -354px;
+    color: whites
+  }
+
+
+  .myAbout{
+    width: 300px;
+  }
+
+  .interests{
+    margin-right: 20px;
+  }
+  
+  .resume-big{
+    display: flex;
+    flex-direction:column;
+  }
+  .resume-box{
+    margin-left: 50px;
+    
+  }
+  
+} */
 
 @media(max-width:307px) {
   .row>div {

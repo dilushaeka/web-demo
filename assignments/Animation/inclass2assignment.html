@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <link href="../assets/normalize.css" rel="stylesheet">
+
+    <style>
+        body{
+        }
+        section {
+
+            position: relative;
+            border: 5px solid #be0f0f;
+            width: 500px;
+            height: 500px;
+        }
+
+        div {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            background-color: orangered;
+            border-radius: 30px;
+            border: solid black;
+
+
+            animation-name: boxwate1;
+            animation-duration: 3s;
+
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-play-state: running;
+        }
+
+       /* @keyframes test {
+           0%{
+               margin-left: 0;
+               margin-top: 0;
+               transform: rotate(0deg);
+           }
+            100%{
+                margin-left: 400px;
+                margin-top: 0;
+                transform: rotate(180deg);
+            }
+        }*/
+        @keyframes boxwate1 {
+            0% {
+                margin-left: 0;
+                margin-top: 0;
+            }
+            25% {
+                margin-left: 400px;
+                margin-top: 0;
+                transform: rotate(180deg);
+            }
+            50% {
+                margin-left: 400px;
+                margin-top: 450px;
+                transform: rotate(360deg);
+            }
+
+            75% {
+                margin-left: 0;
+                margin-top: 450px;
+                transform: rotate(180deg);
+            }
+
+
+            100% {
+                margin-left: 0;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div ></div>
+</section>
+</body>
+</html>

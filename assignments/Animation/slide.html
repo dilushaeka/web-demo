@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        main{
+            width: 400px;
+            height: 300px;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            border: 2px solid darkgreen;
+
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        section{
+            width:1600px;
+            height: 300px;
+            border: 3px solid red;
+            display: flex;
+
+            animation-name: slide;
+            animation-duration: 12s;
+            animation-direction:reverse;
+        }
+
+        div{
+
+            width: 400px;
+            height: 300px;
+            border:2px solid black;
+
+
+        }
+
+        .slider-main1{
+            background-image: url("../assets/images/pexels-simon-berger-1266810.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .slider-main2{/assets/images/pexels-simon-berger-1266810.jpg
+            background-image: url("../assets/images/as2.jfif");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .slider-main3{
+            background-image: url("../assets/images/pexels-simon-berger-1266810.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .slider-main4{
+            background-image: url("../assets/images/pexels-simon-berger-1266810.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        @keyframes slide {
+            0%,20%{transform: translateX(-0%)}
+            25%,45%{transform: translateX(-25%)}
+            50%,70%{transform: translateX(-50%)}
+            75%,100%{transform: translateX(-75%)}
+            /*100%{transform: translateX(-100%)}*/
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div class="slider-main1"> </div>
+        <div class="slider-main2"></div>
+        <div class="slider-main3"></div>
+        <div class="slider-main4"></div>
+
+    </section>
+</main>
+
+
+</body>
+</html>

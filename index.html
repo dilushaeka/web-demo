@@ -51,6 +51,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 
+<!--    hover.css-->
+    <link href="css/hover.css" rel="stylesheet" media="all">
 
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -74,15 +76,17 @@
     <header id="header" class="header">
       <!-- <a href="" class="logo">Dilusha</a>  -->
       <nav id="navbar" class="navbar">
+
+          <img class="hamburger"  src="assets/icons/icons8-hamburger-button-50.png" alt="ham">
           <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="#home-section">Home</a></li>
+            <li class="nav-item"><a class="nav-link " href="#home-section">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about-section" >About</a></li>
             <li class="nav-item"><a class="nav-link" href="#resume-section" >Resume </a></li>
             <li class="nav-item"><a class="nav-link" href="#gallery-section">Gallery</a></li>
             <li class="nav-item"><a class="nav-link" href="#mywork-section" >My work</a></li>
             <li class="nav-item"><a href="#contatct-section" >Contact</a></li>
           </ul>
-          <div class="hamburger"><img src="assets/icons/Hamburger_icon.svg.png" alt=""></div>   
+
       </nav>   
     </header>
         <!-- End of the header --> 
@@ -98,7 +102,7 @@
               <a href="#" class="twitter"> <i class="bi bi-twitter"></i></a>
             </div>
             <div class="header-title">
-              <h2 class="animate__animated animate__bounce">Hello it's Me</h2>
+              <h2 class="animate__animated animate__bounce__repeat-4">Hello it's Me</h2>
             </div>
               <br>
               <br>
@@ -110,11 +114,9 @@
             <!-- <br>
             <br> -->
             <div class="intro">
-              <h2>“Software Engineering Student ,
-                 Social Worker & volunteer ”</h2>
-              <p>I'm <span class="typed" data-typed-items="Software Engineering Student, Social Worker, Developer, Freelancer, Photographer"></span></p>
+                <h1>I'm <span class="multiple-context"></span></h1>
             </div>
-            <div class="hireMe animate__heartBeat">
+            <div class="hireMe animate__heartBeat animate__repeat-1 ">
               <h1>HIRE Me</h1>
             </div>
           </div>
@@ -137,7 +139,8 @@
                         <img src="assets\images\my white shirt pic.png " alt="about-photo">
                     </div>
     
-                    <div class="myAbout" id="myAbout">
+                    <div class="myAbout" id="myAbout" data-aos="fade-up"
+                         data-aos-anchor-placement="center-bottom">
                         <p>I’m  Software Engineering Student , Social Worker & Volunteer From Sri Lanka. 
                                 I Have  Done So Many Social projects and Volunteering Events.Highly Ambitious
                                  & Focused Undergraduate in Computer Science.
@@ -148,7 +151,7 @@
 
                     <br> <br> <br> <br>
                     <div class="my-details">
-                        <div class="my-details-box">
+                        <div class="my-details-box" data-aos="zoom-out-right">
                             <ul>
                                 <li><i> <strong>Birthday :</strong> <span> 20th September 1999</span> </i></li>
                                 <li><i> <strong>Website :</strong> <span> example.com</span></i></li>
@@ -157,7 +160,7 @@
                             </ul>
                         </div>
                         
-                        <div class="my-details-box">
+                        <div class="my-details-box" data-aos="zoom-out-left">
                             <ul>
                                 <li><i> <strong>Age :</strong> <span> 23 </span></i></li>
                                 <li><i> <strong>Contact :</strong> <span> +94702487524</span> </i></li>
@@ -414,7 +417,7 @@
                     </div>
     
                     <div>
-                        <img src="assets\images\side-angle.JPG" alt=""  width="500">
+                        <img src="assets\images\side-angle.JPG" alt=""  width="300">
                     </div>
 
                     <div>
@@ -438,14 +441,10 @@
                   </div>
   
                   <div>
-                      <img src="assets\images\side-angle.JPG" alt=""  width="500">
+                      <img src="assets\images\side-angle.JPG" alt=""  width="300">
                   </div>
             </div>
-           
-
-               
-
-
+            </div>
       </section> <br> <br> <br> <br> <br> <br>
       <!-- ======================================= MY WORKS SECTION ================================================== -->
       <section class="mywork-section" id="mywork-section">
@@ -454,112 +453,98 @@
                     <div class="section-title">
                         <h2>MY WORKS</h2>
                         <h1>CHECK MY WORKS </h1>
-                    </div>
-      
+                    </div> <br> <br>
 
-                      <div class="assin-big">
-
-
-                      <div class="asignment">
+                    <div class="assin-big">
+                        <div class="asignment">
                         <div class="icon-box">
                           <div class="icon"><i class="" ></i><img src="assets\images\uk tile.png" alt=""></div> <br> <br> <br>
                           <h4><a href="https://github.com/dilushaeka/UkTileShopManage">UK Tile House</a></h4>
                           <p>This is my JAVA And MYSQL Project</p> <br>
-                          <button class="view-btn">View</button>
+                          <button class="view-btn"><a href="https://dilushaeka.github.io/css_assignment5/" >View</a></button>
                         </div>
                       </div>
 
-
-                      <div class="asignment">
+                        <div class="asignment">
                         <div class="icon-box">
                           <div class="icon"><i class="" ></i><img src="assets/images/Projects/css Box Assignment.png" alt=""></div> <br> <br> <br>
                           <h4><a href="https://github.com/dilushaeka/CSS_Box_Modle">Box Modle CSS</a></h4>
                           <p>Using Css</p> <br>
-                          <button class="view-btn">View</button>
+                          <button class="view-btn"><a href="https://dilushaeka.github.io/CSS_Box_Modle/" >View</a></button>
                         </div>
                       </div>
 
-                      <div class="asignment">
+                        <div class="asignment">
                         <div class="icon-box">
                           <div class="icon"><i class="" ></i><img src="assets\images\Projects\IT Assignment4.jpg" alt=""></div> <br> <br> <br>
                           <h4><a href="https://github.com/dilushaeka/css_assignment4">Animations</a></h4>
                           <p> Animations Creations</p> <br>
-                          <button class="view-btn">View</button>
+                          <button class="view-btn"><a href="/assignments/Animation/waterdrop.html" >View</a></button>
                         </div>
                       </div>
 
-                      <div class="asignment">
+                         <div class="asignment card4" >
                         <div class="icon-box">
                           <div class="icon"><i class="" ></i><img src="assets/images/Projects/assignment5.jpg" alt=""></div> <br> <br> <br>
                           <h4><a href="https://github.com/dilushaeka/css_assignment5">Card</a></h4>
                           <p>Using HTML And CSS</p> <br>
-                          <button class="view-btn">View</button>
+                          <button class="view-btn"> <a href="https://dilushaeka.github.io/css_assignment5/" >View</a></button>
                         </div>
                       </div>
 
-                      <div class="asignment">
+                        <div class="asignment">
                         <div class="icon-box">
                           <div class="icon"><i class="" ></i><img src="assets/images/Projects/POS Assignment7.png" alt=""></div> <br> <br> <br>
                           <h4><a href="https://github.com/dilushaeka/bootstrap-pos">POS System</a></h4>
                           <p>CRUD Of POS System</p> <br>
-                          <button class="view-btn">View</button>
+                          <button class="view-btn"><a href="https://dilushaeka.github.io/bootstrap-pos-system/" >View</a></button>
                         </div>
                       </div>
 
-                      <div class="asignment">
+                        <div class="asignment">
                         <div class="icon-box">
                           <div class="icon"><i class="" ></i><img src="assets/images/Projects/Assignmentt9.png" alt=""></div> <br> <br> <br>
                           <h4><a href="https://github.com/dilushaeka/Night_Rider_Animation">Knight Rider light Animation</a></h4>
                           <p>Html and javaScript</p> <br>
-                          <button class="view-btn">View</button>
+                          <button class="view-btn"><a href="https://dilushaeka.github.io/Assignment9/" >View</a></button>
                         </div>
                       </div>
 
-                      <div class="asignment">
+                        <div class="asignment">
                         <div class="icon-box">
                           <div class="icon"><i class="" ></i><img src="assets\images/Projects/calculater ass8.png" alt=""></div> <br> <br> <br>
                           <h4><a href="https://github.com/dilushaeka/calculator">Calculater</a></h4>
                           <p>Calacululaer using javaScript</p> <br>
-                          <button class="view-btn">View</button>
+                          <button class="view-btn"><a href="https://dilushaeka.github.io/calculator/" >View</a></button>
                         </div>
                       </div>
 
-                      <div class="asignment">
+                        <div class="asignment">
                         <div class="icon-box">
                           <div class="icon"><i class="" ></i><img src="assets/images/Projects/carAnimation.png" alt=""></div> <br> <br> <br>
                           <h4><a href="https://github.com/dilushaeka/carAnimation">Car Animation</a></h4>
                           <p>using css and javaScript</p> <br>
-                          <button class="view-btn">View</button>
+                          <button class="view-btn"><a href="https://dilushaeka.github.io/carAnimation/" >View</a></button>
                         </div>
                       </div>
 
-                      <div class="asignment">
+                        <div class="asignment">
                         <div class="icon-box">
-                          <div class="icon"><i class="" ></i><img src="assets\images\uk tile.png" alt=""></div> <br> <br> <br>
-                          <h4><a href="https://github.com/dilushaeka">UK Tile House</a></h4>
+                          <div class="icon"><i class="" ></i><img src="assets/images/Projects/js qeue.png" alt=""></div> <br> <br> <br>
+                          <h4><a href="https://github.com/dilushaeka/js_qeue_Ass_">This Is JavaScript Qeue</a></h4>
                           <p>This is my JAVA And MYSQL Project</p> <br>
-                          <button class="view-btn">View</button>
+                          <button class="view-btn"><a href="https://dilushaeka.github.io/js_qeue_Ass_/" >View</a></button>
                         </div>
                       </div>
 
                     </div>
-
-                      
-                    </div>
-    
-    
-    
                 </div>
             </div>
-            
-
-
       </section> <br> <br> <br> <br> <br>
       <!-- ======================================= CONTACT SECTION ================================================== -->
       <section class="contatct" id="contatct-section">
 
-          <div class="container"> 
-            <br> <br>   
+          <div class="container"><br> <br>
 
             <div class="section-title">
                 <h2>contacts</h2><br><br>
@@ -611,27 +596,27 @@
                 </div>
               </div>
               <div class="form-me-div-line">
-                <form class="text-form"><h3>Contact Me</h3>
+                <form class="text-form" onsubmit="sendEmail(); reset(); return false"><h3>Contact Me</h3>
                   
                   <div class="firstname">
-                         <input type="data" name=""  id="first_name" placeholder="First Name Here"> 
+                         <input type="text" name=""  id="first_name" placeholder="First Name Here">
                   </div><br> <br>
                   
                   <div class="lastname">
-                          <input type="data" name=""  id="second_name" placeholder="Second Name Here"> 
+                          <input type="text" name=""  id="subject" placeholder="subject Here">
                    </div><br> <br>
   
                   <div class="email">
-                          <input type="email" name="" id="" placeholder="Your Email Here">
+                          <input type="email" name="" id="mailInput" placeholder="Your Email Here">
                   </div><br> <br>
   
                   <div>
-                       <textarea placeholder="Input Your Message Here" ></textarea>
+                       <textarea id="message" placeholder="Input Your Message Here" ></textarea>
                   </div><br> <br>
   
                   <div class="btns">
-                      <button type="reset"> Clear </button>
-                      <button> Submit</button>
+
+                      <button class="btn-sbmt"> Submit</button>
                   </div> <br> <br>        
                 </form>
               </div>
@@ -651,13 +636,16 @@
     <script src="/assets/jQuary/jquery-3.6.4.min.js"></script>
 
     <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
 
@@ -668,9 +656,18 @@
 <script>
     AOS.init();
 
-    setTimeout(() => {
-        $("#preloder").css("display","none");
-      }, 10000);
+    $(document).ready(()=>{
+        setTimeout(() => {
+            $("#preloder").css({
+                display:"none"
+            });
+        },3000);
+    });
+
+
+
   </script>
+
+
 </body>
 </html>

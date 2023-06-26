@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Animations</title>
+
+    <style>
+        /*div{
+          width: 200px;
+          aspect-ratio: 1/1;
+          background-color: #ad3cad;
+          border: 5px solid black;
+
+          animation-name: my-animation;
+          animation-duration: 4s;
+          animation-play-state: running;
+          !*animation-delay: 1s;*!
+          animation-iteration-count: infinite;
+            animation-direction:normal;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+
+        }
+        @keyframes my-animation {
+          from{
+            margin-left: 0;
+              background-color: #940492;
+
+          }
+          to{
+            margin-left: 500px;
+              background-color: #0f30b0;
+          }
+        }
+
+        div:hover{
+          animation-play-state: paused;
+        }*/
+
+        section {
+            width: 500px;
+            aspect-ratio: 1/1;
+            border: 2px solid black;
+        }
+
+        div {
+            height: 100px;
+            aspect-ratio: 1/1;
+            background-color: #be0f0f;
+            animation-name: box-wate;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+        }
+
+        @keyframes box-wate {
+            0% {
+                margin-left: 0;
+                margin-top: 0;
+            }
+            25% {
+                margin-left: 400px;
+                margin-top: 0
+            }
+            50% {
+                margin-left: 400px;
+                margin-top: 400px;
+            }
+
+            75% {
+                margin-left: 0;
+                margin-top:400px
+            }
+
+
+            100% {
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class=""></div>
+</section>
+
+</body>
+</html>

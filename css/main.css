@@ -304,7 +304,7 @@ header.sticky nav ul li a {
 
   animation-name: hire;
   animation-duration: 5s;
-  /* Animation will be repeated infinitely */
+  
   animation-iteration-count: infinite;
 }
 .animate__animated{
@@ -690,7 +690,7 @@ header.sticky nav ul li a {
 }
 
 .mywork-section .icon-box:hover {
-  background: #18d26e;
+  background: #1bd9d0;
   border-color: #18d26e;
 }
 
@@ -753,7 +753,19 @@ header.sticky nav ul li a {
 
 .infomation-box a {
   text-decoration: none;
-  color: black;
+  color: rgb(43, 134, 225);
+}
+
+.social-links2 img{
+  background-color: #653ce0;
+  margin-left: 50px;
+  padding: 5px;
+}
+
+
+
+.form-me-div-line h3{
+  color: azure;
 }
 
 .text-form{
@@ -782,7 +794,7 @@ header.sticky nav ul li a {
 }
 
 .btn-sbmt{
-  background-color: #0de01a;
+  background-color: #8acde6;
   padding: 10px;
 }
 /*--------------------------------------------------------
@@ -791,7 +803,7 @@ header.sticky nav ul li a {
 
 
 footer{
-  background-color: #18d26e;
+  background-color: #1023ee;
   height: 10vh;
 }
 /* -------------------------------------------------------------------- */

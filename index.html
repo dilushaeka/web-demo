@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -127,7 +127,7 @@
                     <h2 id="title-about">About</h2>
                     <br>
                     <br><br>
-                    <h1>Leran More About Me</h1>
+                    <h1>Learn More About Me</h1>
         
                 </div>
     
@@ -614,29 +614,30 @@
                 </div>
               </div>
               <div class="form-me-div-line">
-                <form class="text-form" onsubmit="sendEmail(); reset(); return false"><h3>Contact Me</h3>
-                  
-                  <div class="firstname">
-                         <input type="text" name=""  id="first_name" placeholder="First Name Here">
-                  </div><br> <br>
-                  
-                  <div class="lastname">
-                          <input type="text" name=""  id="subject" placeholder="subject Here">
-                   </div><br> <br>
-  
-                  <div class="email">
-                          <input type="email" name="" id="mailInput" placeholder="Your Email Here">
-                  </div><br> <br>
-  
-                  <div>
-                       <textarea id="message" placeholder="Input Your Message Here" ></textarea>
-                  </div><br> <br>
-  
-                  <div class="btns">
+                  <form class="text-form"   action="https://formspree.io/f/mgejwykl"
+                        method="POST"><h3>Contact Me</h3>
 
-                      <button class="btn-sbmt"> Submit</button>
-                  </div> <br> <br>        
-                </form>
+                      <div class="firstname">
+                          <input type="text" name="firstName"  id="first_name" placeholder="First Name Here">
+                      </div><br> <br>
+
+                      <div class="lastname">
+                          <input type="text" name="lastName"  id="subject" placeholder="subject Here">
+                      </div><br> <br>
+
+                      <div class="email">
+                          <input type="email" name="email" id="mailInput" placeholder="Your Email Here">
+                      </div><br> <br>
+
+                      <div>
+                          <textarea id="message" name="meassage" placeholder="Input Your Message Here" ></textarea>
+                      </div><br> <br>
+
+                      <div class="btns">
+
+                          <button class="btn-sbmt"> Submit</button>
+                      </div> <br> <br>
+                  </form>
               </div>
             </div>
             
@@ -669,6 +670,7 @@
 
 
     <script src="js/main.js"></script>
+    <script src="js/vendor"></script>
    <!-- AOS JS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

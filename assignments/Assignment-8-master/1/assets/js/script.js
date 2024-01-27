@@ -17,7 +17,7 @@ let queData = {
 renderQue();
 
 function renderQue() {
-    $("main> section:first-child").empty();
+    $("main> section:first-child").empty(); ``
     for (let i = 0; i < queData.student.length; i++) {
         $("main> section:first-child").append(`<div><img src="${queData.student[i].img}" alt="student"><h4>${queData.student[i].letter}</h4></div>`);
     }

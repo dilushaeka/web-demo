@@ -298,6 +298,7 @@ h6 {
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
+
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -594,6 +595,7 @@ section .container {
   border-left: 2px solid rgba(255, 255, 255, 0.2);
   position: relative;
 }
+
 
 .resume .resume-item h4 {
   line-height: 18px;

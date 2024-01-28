@@ -1,0 +1,19 @@
+.big-div{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.animation{
+    width: 200px;
+    margin: 40px;
+    
+    
+     
+}
+
+.animation a{
+    font-size: xx-large;
+    text-decoration: none;
+    color: black;
+}

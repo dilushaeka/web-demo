@@ -1,10 +1,4 @@
-/**
- * Template Name: Personal
- * Updated: Mar 10 2023 with Bootstrap v5.2.3
- * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
+
 (function() {
     "use strict";
 
@@ -111,32 +105,32 @@
     /**
      * Activate/show sections on load with hash links
      */
-    window.addEventListener('load', () => {
-        if (window.location.hash) {
-            let initial_nav = select(window.location.hash)
-
-            if (initial_nav) {
-                let header = select('#header')
-                let navlinks = select('#navbar .nav-link', true)
-
-                header.classList.add('header-top')
-
-                navlinks.forEach((item) => {
-                    if (item.getAttribute('href') == window.location.hash) {
-                        item.classList.add('active')
-                    } else {
-                        item.classList.remove('active')
-                    }
-                })
-
-                setTimeout(function() {
-                    initial_nav.classList.add('section-show')
-                }, 350);
-
-                scrollto(window.location.hash)
-            }
-        }
-    });
+    // window.addEventListener('load', () => {
+    //     if (window.location.hash) {
+    //         let initial_nav = select(window.location.hash)
+    //
+    //         if (initial_nav) {
+    //             let header = select('#header')
+    //             let navlinks = select('#navbar .nav-link', true)
+    //
+    //             header.classList.add('header-top')
+    //
+    //             navlinks.forEach((item) => {
+    //                 if (item.getAttribute('href') == window.location.hash) {
+    //                     item.classList.add('active')
+    //                 } else {
+    //                     item.classList.remove('active')
+    //                 }
+    //             })
+    //
+    //             setTimeout(function() {
+    //                 initial_nav.classList.add('section-show')
+    //             }, 350);
+    //
+    //             scrollto(window.location.hash)
+    //         }
+    //     }
+    // });
 
     /**
      * Skills animation
@@ -280,7 +274,7 @@ function sendEmail(){
         Username : "dilushaeka99@gmail.com",
         Password : "A6E64C6F4677BF6AB15344C1329019AE295A",
         To : 'dilushaeka99@gmail.com',
-        From :document.getElementById("mailInput").value,
+        From :document.getElementById("email").value,
         Subject : document.getElementById("subject").value,
         Body : document.getElementById("message").value
     }).then(

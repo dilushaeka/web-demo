@@ -464,8 +464,7 @@ section .container {
 }
 
 .tech-div{
-  /*display: flex;*/
-  /*flex-direction: row;*/
+
   column-count: 6;
   gap: 10px;
   /*grid-template-columns: auto auto auto auto;*/

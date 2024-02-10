@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d98fd6d-48e1-49d7-9ab6-282a8de9b547" name="Changes" comment="Removed some of the assignments 2">
-      <change afterPath="$PROJECT_DIR$/assets/images/dilusha-1 - Copy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/dilusha-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/dilusha.tif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +60,7 @@
       <workItem from="1706459611434" duration="1104000" />
       <workItem from="1706687763974" duration="2631000" />
       <workItem from="1707320648183" duration="1613000" />
-      <workItem from="1707542392699" duration="8830000" />
+      <workItem from="1707542392699" duration="11697000" />
     </task>
     <task id="LOCAL-00001" summary="Removed some of the assignments">
       <option name="closed" value="true" />
